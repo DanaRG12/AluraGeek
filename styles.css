@@ -1,0 +1,13 @@
+
+.encabezado{
+   background-color: #5d04d9;
+   text-align: center;
+
+}
+.catalogo_texto{
+    margin-top: 1em;
+   font-weight: 600;
+   font-size: 28px; 
+   line-height: 34px;
+   text-align: center;
+}
