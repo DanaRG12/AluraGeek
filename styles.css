@@ -4,10 +4,52 @@
    text-align: center;
 
 }
-.catalogo_texto{
-    margin-top: 1em;
-   font-weight: 600;
-   font-size: 28px; 
-   line-height: 34px;
-   text-align: center;
+body{
+    font-family: "Kalam", cursive;
 }
+.catalogo_container{
+    margin-top: 1em;
+    font-weight: 600;
+    font-size: 28px; 
+    line-height: 34px;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    margin-left: 2em;
+
+}
+.productos{
+    background-color: #5d04d9;
+    border: 5px solid;
+    border-color: #000;
+    border-bottom-width: thick;
+    border-radius: 5%;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    
+}
+.catalogo_item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 10px;
+    grid padding: auto;
+    background-color: aliceblue;
+    overflow: scroll;
+    gap: 5px;
+    width: 50%;
+    box-shadow: 5px 5px 12px #00000035;
+
+  }
+
+.imagen__producto{
+    margin: 10px;
+    border: 5px solid;
+
+}
+.bolsa{
+    image-orientation: rigth;
+}
+ 
