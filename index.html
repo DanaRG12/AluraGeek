@@ -20,87 +20,118 @@
                 <img src="./imagenes/logo.png" alt="logo AluraGeek">
             </div>
     </header>
-    <section class="catalogo">
-        <div class="catalogo_container">
-        <h2 class="catalogo_texto">MIS PRODUCTOS:</h2>
-        </div>
 
-        <ul class="catalogo_item">
-             <li class="productos">
-                    <div class="descripcion-producto">
-                        <img src="./imagenes/gatotiburon.jpg" class="imagen__producto" alt="comprar">
-                        <div class="detalles__producto">
-                            <h3 class="nombre">Gatito Michi Tiburón</h3>
-                            <p class="precio">$106 mx</p> 
-                            <img src="./imagenes/Sin título-3.png" class="bolsa"></src>
-                        </div>
-                    </div>
-                </li>
-                <li class="productos">
-                    <div class="descripcion-producto">
-                        <img src="./imagenes/gatotiburon.jpg" class="imagen__producto" alt="comprar">
-                        <div class="detalles__producto">
-                            <h3 class="nombre">Gatito Michi Tiburón</h3>
-                            <p class="precio">$106 mx</p> 
-                            <img src="./imagenes/Sin título-3.png" class="bolsa"></src>
-                        </div>
-                    </div>
-                </li>
-                <li class="productos">
-                    <div class="descripcion-producto">
-                        <img src="./imagenes/gatotiburon.jpg" class="imagen__producto" alt="comprar">
-                        <div class="detalles__producto">
-                            <h3 class="nombre">Gatito Michi Tiburón</h3>
-                            <p class="precio">$106 mx</p> 
-                            <img src="./imagenes/Sin título-3.png" class="bolsa"></src>
-                        </div>
-                    </div>
-                </li>               
+
+
+    <main class="main-container">
+        <section class="catalogo">
+
+            <h2 class="catalogo_texto">MIS PRODUCTOS:</h2>
+
+            <div data-product class="catalogo_container">
+
+
+                <div class="card">
+                <div class="img-container">
+                <img src="./imagenes/gatotiburon.jpg" alt="imagen"> </div>
+
+                <div class="card-container--info">
+                  <p>Nombre</p>
+                  <div class="card-container--value">            
+                    <p>$ 100.00</p>
+
+                    <button class="delete-button" data-id="${id}" >
+                    <img src="./imagenes/trash.png" alt="Eliminar"></button>
+
+                  </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+            <ul class="catalogo_item">
                  <li class="productos">
-                    <div class="descripcion-producto">
-                        <img src="./imagenes/gatotiburon.jpg" class="imagen__producto" alt="comprar">
-                        <div class="detalles__producto">
-                            <h3 class="nombre">Gatito Michi Tiburón</h3>
-                            <p class="precio">$106 mx</p> 
-                            <img src="./imagenes/Sin título-3.png" class="bolsa"></src>
+                        <div class="descripcion-producto">
+                            <img src="./imagenes/gatotiburon.jpg" class="imagen__producto" alt="comprar">
+                            <div class="detalles__producto">
+                                <h3 class="nombre">Gatito Michi Tiburón</h3>
+                                <p class="precio">$106 mx</p> 
+                                <img src="./imagenes/Sin título-3.png" class="bolsa"></src>
+                            </div>
                         </div>
-                    </div>
-                </li>
-
-          </div>
-        </section>
-
-<section class="formulario">
-    <div class="formulario__container">
-        <h2 class="formulario__texto">AGREGAR PRODUCTOS:</h2>
-    </div>
-
-        <form class="principal__formulario data-formulario"></form>
-        <fieldset class="formulario__campo">
-            <input placeholder="nombre..." name="nombre" id="nombre" class="campo__completo" type="text" minlength="3" required>
-            <span class="mensaje-error"></span>
-        </fieldset>
+                    </li>
+                    <li class="productos">
+                        <div class="descripcion-producto">
+                            <img src="./imagenes/gatotiburon.jpg" class="imagen__producto" alt="comprar">
+                            <div class="detalles__producto">
+                                <h3 class="nombre">Gatito Michi Tiburón</h3>
+                                <p class="precio">$106 mx</p> 
+                                <img src="./imagenes/Sin título-3.png" class="bolsa"></src>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="productos">
+                        <div class="descripcion-producto">
+                            <img src="./imagenes/gatotiburon.jpg" class="imagen__producto" alt="comprar">
+                            <div class="detalles__producto">
+                                <h3 class="nombre">Gatito Michi Tiburón</h3>
+                                <p class="precio">$106 mx</p> 
+                                <img src="./imagenes/Sin título-3.png" class="bolsa"></src>
+                            </div>
+                        </div>
+                    </li>               
+                     <li class="productos">
+                        <div class="descripcion-producto">
+                            <img src="./imagenes/gatotiburon.jpg" class="imagen__producto" alt="comprar">
+                            <div class="detalles__producto">
+                                <h3 class="nombre">Gatito Michi Tiburón</h3>
+                                <p class="precio">$106 mx</p> 
+                                <img src="./imagenes/Sin título-3.png" class="bolsa"></src>
+                            </div>
+                        </div>
+                    </li>
+    
+              </div>
+            </section>
+    
+    <section class="formulario">
+        <div class="formulario__container">
+            <h2 class="formulario__texto">AGREGAR PRODUCTOS:</h2>
         </div>
-
-        <div>
-            <form class="principal__formulario data-formulario"></form>
+    
+            <form class="principal__formulario_data-formulario"></form>
             <fieldset class="formulario__campo">
-                <input placeholder="precio..." name="precio" id="precio" class="campo__completo" type="text" minlength="3" required>
+                <input placeholder="nombre..." name="nombre" id="nombre" class="campo__completo" type="text" minlength="3" required>
                 <span class="mensaje-error"></span>
             </fieldset>
-        </div>
-
-        <div>
+            </div>
+    
+            <div>
                 <form class="principal__formulario data-formulario"></form>
                 <fieldset class="formulario__campo">
-                    <input placeholder="imagen..." name="imagen" id="imagen" class="campo__completo" type="text" minlength="3" required>
+                    <input placeholder="precio..." name="precio" id="precio" class="campo__completo" type="text" minlength="3" required>
                     <span class="mensaje-error"></span>
                 </fieldset>
+            </div>
+    
+            <div>
+                    <form class="principal__formulario data-formulario"></form>
+                    <fieldset class="formulario__campo">
+                        <input placeholder="imagen..." name="imagen" id="imagen" class="campo__completo" type="text" minlength="3" required>
+                        <span class="mensaje-error"></span>
+                    </fieldset>
+            </div>
+            <button class="enviar" type="button">Enviar</button>
+            <button class="limpiar" type="button">Limpiar</button>
+    
+    
+    
+    
         </div>
-
-
-    </div>
-    </section>
+        </section>
+    </main>
+   
 
     <footer class="rodapie__container">
         <img src="./imagenes/logo.png" alt="logo AluraGeek">
