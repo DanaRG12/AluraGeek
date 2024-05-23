@@ -20,7 +20,7 @@ const createProducts = (name, price, image) => {
     .catch(err => console.log(err));
 }
 
-const deleteProducts = async (reset) => {
+const deleteProducts = (id) => {
     return fetch(`${"http://localhost:3000/products"}/${id}`, {
       method: "DELETE",
       headers: {
@@ -37,3 +37,5 @@ export const servicesProducts= {
     createProducts,
     deleteProducts,
 };
+
+

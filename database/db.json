@@ -31,10 +31,23 @@
       "id": "5"
     },
     {
-      "id": "817c",
+      "id": "9f67",
+      "name": "Spyro Funko",
+      "price": "$ 3,433 MX",
+      "image": "https://ss610.liverpool.com.mx/xl/1100006975.jpg"
+    },
+    {
+      "id": "18f2",
       "name": "super man",
       "price": "$ 150 MN",
       "image": "https://m.media-amazon.com/images/I/610teIBiKeL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": "5283",
+      "name": "Rei",
+      "price": "$ 487 MN",
+      "image": "https://m.media-amazon.com/images/I/51SSBYB0gWL.__AC_SX300_SY300_QL70_ML2_.jpg"
     }
+
   ]
 }

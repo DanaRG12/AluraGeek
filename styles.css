@@ -9,7 +9,7 @@ body{
 }
 .catalogo_container{
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     gap: 30px;
     padding: 40px 0px;
     overflow-x: auto;
@@ -139,15 +139,25 @@ footer{
 
 
   
-@media (min-width: 640px) {
+@media (min-width: 768px) {
+    main{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    /*.grid-container{
+        flex-direction: column-reverse;
+    }
 
     .formulario form input,
     .formulario form input::placeholder {
         font-size: 20px;
-    }
+    }*/
 
 }
 
+/*
 @media (min-width: 1000px) {
 
 main{
@@ -156,11 +166,11 @@ main{
     /*display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    justify-content: space-around;*/
+    justify-content: space-around;
     }
 
     .catalogo_container {
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         justify-content: center;
     }
 
@@ -182,3 +192,4 @@ main{
     }
 
 }
+*/
