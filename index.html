@@ -58,34 +58,29 @@
             <h2 class="formulario__texto">AGREGAR PRODUCTOS:</h2>
         </div>
     
-            <form class="principal__formulario_data-formulario"></form>
-            <fieldset class="formulario__campo">
-                <input placeholder="nombre..." name="nombre" id="nombre" class="campo__completo" type="text" minlength="3" required>
+            <form class="principal__formulario" data-form>
+            <fieldset class="formulario__name">
+                <input data-name placeholder="nombre..." name="nombre" id="nombre" class="campo__completo" type="text" minlength="3" required>
                 <span class="mensaje-error"></span>
             </fieldset>
-            </div>
-    
-            <div>
-                <form class="principal__formulario data-formulario"></form>
-                <fieldset class="formulario__campo">
-                    <input placeholder="precio..." name="precio" id="precio" class="campo__completo" type="text" minlength="3" required>
+
+            <fieldset class="formulario__price">
+                    <input data-price placeholder="precio..." name="precio" id="precio" class="campo__completo" type="text" minlength="3" required>
                     <span class="mensaje-error"></span>
                 </fieldset>
-            </div>
-    
-            <div>
-                    <form class="principal__formulario data-formulario"></form>
-                    <fieldset class="formulario__campo">
-                        <input placeholder="imagen..." name="imagen" id="imagen" class="campo__completo" type="text" minlength="3" required>
+
+            <fieldset class="formulario__image">
+                        <input data-image placeholder="imagen..." name="imagen" id="imagen" class="campo__completo" type="text" minlength="3" required>
                         <span class="mensaje-error"></span>
                     </fieldset>
+
             </div>
-            <button class="enviar" type="button">Enviar</button>
-            <button class="limpiar" type="button">Limpiar</button>
+            <button class="submit" type="submit">Enviar</button>
+            <button class="limpiar" type="reset">Limpiar</button>
     
     
     
-    
+        </form>
         </div>
         </section>
 

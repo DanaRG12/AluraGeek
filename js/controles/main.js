@@ -1,7 +1,7 @@
 import { servicesProducts } from "../services/products-service.js";
 
 const productContainer = document.querySelector("[data-product]");
-
+const form = document.querySelector("[data-form]");
 function createCard (name, price, image, id){
     const card = document.createElement("div");
     card.classList.add("card");
@@ -37,13 +37,61 @@ const render = async () => {
                     product.id
                  )
             )
-        })
-
-
-     
+        })   
     }catch (error) {
         console.log(error);
     }
 };
-render()
 
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const name = document.querySelector("[data-name]").value;
+    const price = document.querySelector("[data-price]").value;
+    const image = document.querySelector("[data-image]").value;
+
+    //console.log(name);
+   // console.log(price);
+    //console.log(image);
+    servicesProducts
+    .createProducts(name, price, image)
+    .then((res) => console.log(res))
+    .catch((err) => console.log(err))
+
+});
+
+
+productContainer.addEventListener("click", async (event) => {
+    event.preventDefault();
+    const removeButton = event.target.closest(".delete-button");
+    if (removeButton) {
+        const itemId = removeButton.dataset.id;
+        try {
+            await servicesProducts
+            .deleteProducts(itemId); 
+            console.log('Producto eliminado con éxito');
+            // Encuentra y elimina el elemento padre ".card"
+            const cardToRemove = removeButton.closest(".card");
+            if (cardToRemove) {
+                cardToRemove.remove(); // Elimina el producto del DOM
+            } else {
+                console.error('No se pudo encontrar el elemento padre .card');
+            }
+        } catch (err) {
+            console.error('Error al eliminar el producto:', err);
+        }
+    }
+    });
+
+form.addEventListener(".delete-button", (event) => {
+    event.preventDefault();
+    const name = document.querySelector("[data-name]").value;
+    const price = document.querySelector("[data-price]").value;
+    const image = document.querySelector("[data-image]").value;
+    servicesProducts
+    .deleteProducts(name, price, image)
+    .then((res) => console.log(res))
+    .catch((err) => console.log(err))
+
+});
+
+render()

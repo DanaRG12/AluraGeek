@@ -1,41 +1,40 @@
 {
-    "products": [
-                {
-                "name": "Peluche Capybara",
-                "price": "$ 228 MX",
-                "image": "https://m.media-amazon.com/images/I/518Lj8BFyjL._AC_SX679_.jpg",
-                "id": 1
-                },
-                
-                {
-                 "name": "Baby Yoda",
-                "price": "$ 499 MX",
-                "image": "https://m.media-amazon.com/images/I/71X2u76uX3L._AC_SX679_.jpg",
-                "id": 2   
-                },
-               
-                {
-                "name": "Funko Batman",
-                "price": "$ 429 MX",
-                "image": "https://m.media-amazon.com/images/I/518YabTa8YL.__AC_SX300_SY300_QL70_ML2_.jpg",
-                "id": 3 
-                },
-                
-                {
-                "name": "Peluche Pikachu",
-                "price": "$ 402 MX",
-                "image": "https://m.media-amazon.com/images/I/61Lq4KlU66L.__AC_SX300_SY300_QL70_ML2_.jpg",
-                "id": 4    
-                },
-                
-                {
-                "name": "Figura Goku",
-                "price": "$ 445 MX",
-                "image": "https://m.media-amazon.com/images/I/71NLC3XLRfS.__AC_SX300_SY300_QL70_ML2_.jpg",
-                "id": 5
-                }
-
-        
-        
-    ]
+  "products": [
+    {
+      "name": "Peluche Capybara",
+      "price": "$ 228 MX",
+      "image": "https://m.media-amazon.com/images/I/518Lj8BFyjL._AC_SX679_.jpg",
+      "id": "1"
+    },
+    {
+      "name": "Baby Yoda",
+      "price": "$ 499 MX",
+      "image": "https://m.media-amazon.com/images/I/71X2u76uX3L._AC_SX679_.jpg",
+      "id": "2"
+    },
+    {
+      "name": "Funko Batman",
+      "price": "$ 429 MX",
+      "image": "https://m.media-amazon.com/images/I/518YabTa8YL.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "id": "3"
+    },
+    {
+      "name": "Peluche Pikachu",
+      "price": "$ 402 MX",
+      "image": "https://m.media-amazon.com/images/I/61Lq4KlU66L.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "id": "4"
+    },
+    {
+      "name": "Figura Goku",
+      "price": "$ 445 MX",
+      "image": "https://m.media-amazon.com/images/I/71NLC3XLRfS.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "id": "5"
+    },
+    {
+      "id": "817c",
+      "name": "super man",
+      "price": "$ 150 MN",
+      "image": "https://m.media-amazon.com/images/I/610teIBiKeL._AC_UF894,1000_QL80_.jpg"
+    }
+  ]
 }
