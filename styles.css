@@ -7,6 +7,13 @@
 body{
     font-family: "Kalam", cursive;
 }
+.catalogo_container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 0px;
+    overflow-x: auto;
+}
 /*.catalogo_container{
     margin-top: 1em;
     font-weight: 600;
@@ -23,16 +30,15 @@ body{
     border-bottom-width: thick;
     border-radius: 5%;
     width: 180px;
-    height: 311px;
     padding: 10px;
     text-align: center;
     font-family: "Kanit", sans-serif;
     font-size: medium;
-    font-weight: bold;
     display: flex;
     flex-direction: column;
-    
-}
+    }
+
+
 /*.card {
     width: 50%;
     max-width: 1000px;
@@ -48,32 +54,48 @@ body{
     gap: 5px;
     width: 50%;
     box-shadow: 5px 5px 12px #00000035;
+        height: 150px;
+        text-align: center;
   }*/
 
-.imagen__producto{
-    margin: 10px;
+.img-container{
+    /*margin: 5%;*/
     border: 5px solid;
-    
-
+   /* width: 90%;*/
 }
-.bolsa{
-    image-orientation: rigth;
+.img-productos{
+    width: 98%;
+    height: 150px;
+  }
+.card-container--info{
+    text-align: justify;
+}
+
+.delete-button, .trash{
+    height: 30px;
+    cursor: pointer;
+    background-color: #5d04d9
 }
 
 .formulario{
     display: flexbox;
     flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    padding: 40px;
+    align-self: center;
 }
 
-.formulario__container, .catalogo_texto{
+.formulario__container, .catalogo_texto, input::placeholder{
     margin-top: 1em;
     font-weight: 600;
     font-size: 28px; 
     line-height: 34px;
     text-align: center;
     font-family: "Kanit", sans-serif;
-    margin-left: 2em;
+
 }
+
 input{
     border-radius: 10px;
     outline: 2px solid #5d04d9;
@@ -92,7 +114,7 @@ button {
     border-radius: 10em;
     font-size: 17px;
     font-weight: 600;
-    padding: 1em 2em;
+    /*padding: 1em 2em;*/
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border: 1px solid black;
@@ -109,11 +131,54 @@ button {
         box-shadow: 0 0 0 0 black;
       }
 
-
-
-
 footer{
     font-family: "Kalam", sans-serif;
     background-color: #5d04d9;
     text-align: center;
   };
+
+
+  
+@media (min-width: 640px) {
+
+    .formulario form input,
+    .formulario form input::placeholder {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+main{
+    flex-direction: row-reverse;
+    
+    /*display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: space-around;*/
+    }
+
+    .catalogo_container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .catalogo_container::after {
+        display: none;
+    }
+
+    .card-container--info,
+    .card-container--value {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    main {
+        justify-content: center;
+        gap: 100px;
+    }
+
+}

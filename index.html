@@ -23,7 +23,7 @@
 
 
 
-    <main class="main-container">
+    <main class="grid-container">
         <section class="catalogo">
 
             <h2 class="catalogo_texto">MIS PRODUCTOS:</h2>
@@ -33,69 +33,27 @@
 
                 <div class="card">
                 <div class="img-container">
-                <img src="./imagenes/gatotiburon.jpg" alt="imagen"> </div>
+                <img class="img-productos" src="./imagenes/gatotiburon.jpg" alt="imagen"> </div>
 
                 <div class="card-container--info">
-                  <p>Nombre</p>
+                  <p>Nombre</p> </div>
                   <div class="card-container--value">            
-                    <p>$ 100.00</p>
-
+                    <p>$ 100.00</p></div>
+                 <div class="card-container--delete"> 
                     <button class="delete-button" data-id="${id}" >
-                    <img src="./imagenes/trash.png" alt="Eliminar"></button>
+                    <img class="trash" src="./imagenes/trash.png" alt="Eliminar"></button></div>
 
-                  </div>
-                </div>
-            </div>
-        </div>
+                    </div>
+
     
 
 
-            <ul class="catalogo_item">
-                 <li class="productos">
-                        <div class="descripcion-producto">
-                            <img src="./imagenes/gatotiburon.jpg" class="imagen__producto" alt="comprar">
-                            <div class="detalles__producto">
-                                <h3 class="nombre">Gatito Michi Tiburón</h3>
-                                <p class="precio">$106 mx</p> 
-                                <img src="./imagenes/Sin título-3.png" class="bolsa"></src>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="productos">
-                        <div class="descripcion-producto">
-                            <img src="./imagenes/gatotiburon.jpg" class="imagen__producto" alt="comprar">
-                            <div class="detalles__producto">
-                                <h3 class="nombre">Gatito Michi Tiburón</h3>
-                                <p class="precio">$106 mx</p> 
-                                <img src="./imagenes/Sin título-3.png" class="bolsa"></src>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="productos">
-                        <div class="descripcion-producto">
-                            <img src="./imagenes/gatotiburon.jpg" class="imagen__producto" alt="comprar">
-                            <div class="detalles__producto">
-                                <h3 class="nombre">Gatito Michi Tiburón</h3>
-                                <p class="precio">$106 mx</p> 
-                                <img src="./imagenes/Sin título-3.png" class="bolsa"></src>
-                            </div>
-                        </div>
-                    </li>               
-                     <li class="productos">
-                        <div class="descripcion-producto">
-                            <img src="./imagenes/gatotiburon.jpg" class="imagen__producto" alt="comprar">
-                            <div class="detalles__producto">
-                                <h3 class="nombre">Gatito Michi Tiburón</h3>
-                                <p class="precio">$106 mx</p> 
-                                <img src="./imagenes/Sin título-3.png" class="bolsa"></src>
-                            </div>
-                        </div>
-                    </li>
+            
     
               </div>
             </section>
     
-    <section class="formulario">
+        <section class="formulario">
         <div class="formulario__container">
             <h2 class="formulario__texto">AGREGAR PRODUCTOS:</h2>
         </div>
@@ -130,6 +88,7 @@
     
         </div>
         </section>
+
     </main>
    
 
@@ -138,5 +97,7 @@
         <p>por Diana Robles <br>para AluraLatam 2024</p> 
 
     </footer>
+    <script type="module" src="js/controles/main.js"></script>
+
 </body>
 </html>
